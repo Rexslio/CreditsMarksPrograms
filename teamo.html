@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="mirror-name" data-text="Tu Nombre Aquí">
+        <span>te amoo, porque....</span>
+    </h1>
+
+    <div class="reasons-container">
+        <div class="reason-box">
+            <img src="sonrisa.jpg" alt="Sonrisa">
+            <p>Porque iluminas mi vida con tu sonrisa</p>
+        </div>
+        <div class="reason-box">
+            <img src="apoyo.jpg" alt="Apoyo">
+            <p>Porque siempre me apoyas en todo</p>
+        </div>
+        <div class="reason-box">
+            <img src="guitarra.jpg" alt="Talento">
+            <p>Porque eres increíblemente talentosa</p>
+        </div>
+        <div class="reason-box">
+            <img src="especial.jpg" alt="Especial">
+            <p>Porque haces que cada día sea especial</p>
+        </div>
+        <div class="reason-box">
+            <img src="inspiracion.jpg" alt="Inspiración">
+            <p>Porque me inspiras a ser mejor</p>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const reasonBoxes = document.querySelectorAll(".reason-box");
+            reasonBoxes.forEach((box, index) => {
+                setTimeout(() => {
+                    box.classList.add("visible");
+                }, index * 300);
+            });
+        });
+    </script>
+    <!-- 💖 Efecto de Espejo con el Nombre -->
+<h1 class="mirror-name" data-text="Tu Nombre Aquí">
+    <span>VIVIANA</span>
+</h1>
+
+<!-- 📝 Sección de Promesas -->
+<div class="promises-container">
+    <div class="promise-box">Siempre estaré a tu lado sin importar qué ❤️</div>
+    <div class="promise-box">Te haré sonreír todos los días 😊</div>
+    <div class="promise-box">Te apoyaré en cada uno de tus sueños ✨</div>
+    <div class="promise-box">Seré tu lugar seguro en los días difíciles 🤗</div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const promiseBoxes = document.querySelectorAll(".promise-box");
+        promiseBoxes.forEach((box, index) => {
+            setTimeout(() => {
+                box.classList.add("visible");
+            }, index * 300);
+        });
+    });
+</script>
+<!-- 🔘 Botón para volver al menú principal -->
+<button class="back-button" onclick="goToMainMenu()">Volver al Menú Principal</button>
+
+<script>
+    function goToMainMenu() {
+        window.location.href = "index.html"; // Cambia esto si el archivo tiene otro nombre o ruta
+    }
+</script>
+
+    </body>
+</html>
